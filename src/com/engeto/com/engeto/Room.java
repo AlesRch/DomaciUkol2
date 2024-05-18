@@ -1,26 +1,38 @@
 package com.engeto.com.engeto;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Room {
+    private int roomNumber;
     private int numberOfBeds;
     private boolean balcony;
-    private boolean seaViews;
+    private boolean seaView;
     private int pricepPerDay;
 
-    public Room(int numberOfBeds, boolean balcony, boolean seaViews,
-                int pricepPerDay) {
+    public Room(int roomNumber, int numberOfBeds, boolean balcony, boolean seaViews, int pricepPerDay) {
+        this.roomNumber = roomNumber;
         this.numberOfBeds = numberOfBeds;
         this.balcony = balcony;
-        this.seaViews = seaViews;
+        this.seaView = seaViews;
         this.pricepPerDay = pricepPerDay;
+    }
+
+    public int getiD() {
+        return roomNumber;
+    }
+
+    public String getDescription() {
+        return "Room number: " +roomNumber + " Beds: " + numberOfBeds + " Balcony: " + balcony
+                + " Seaview: " + seaView + " Price per day: " +pricepPerDay + (" Kč");
+    }
+
+    public void setiD(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
     public int getNumberOfBeds() {
         return numberOfBeds;
-    }
-
-    public String getDescription() {
-        return "Number of bed: " + numberOfBeds +(",") + " balcony: " + balcony +(",") + " sea views: " + seaViews +(",") +
-                " price per day is: " + pricepPerDay + " Kč";
     }
 
     public void setNumberOfBeds(int numberOfBeds) {
@@ -36,11 +48,11 @@ public class Room {
     }
 
     public boolean isSeaViews() {
-        return seaViews;
+        return seaView;
     }
 
     public void setSeaViews(boolean seaViews) {
-        this.seaViews = seaViews;
+        this.seaView = seaViews;
     }
 
     public int getPricepPerDay() {
