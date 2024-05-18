@@ -53,12 +53,12 @@ public class Main {
             System.out.println(room.getDescription());
         }
         System.out.println();
-        Booking booking1 = new Booking(101, "Adéla Malíková", "Jana Dvořáčková", LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), "recreational");
+        Booking booking1 = new Booking(101, "Adéla Malíková","none", LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), "recreational");
         Booking booking2 = new Booking(103, "Adéla Malíková", "Jana Dvořáčková", LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), "recreational");
 
         List<Booking> bookings = new ArrayList<>();
         bookings.add(booking1);
-        bookings.add(booking1);
+        bookings.add(booking2);
 
 
         System.out.println("Bookings: " + bookings.size());
