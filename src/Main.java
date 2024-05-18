@@ -1,5 +1,5 @@
 import com.engeto.Guest;
-import com.engeto.com.engeto.Room;
+import com.engeto.Room;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

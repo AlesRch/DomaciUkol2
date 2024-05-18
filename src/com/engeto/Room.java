@@ -1,7 +1,4 @@
-package com.engeto.com.engeto;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+package com.engeto;
 
 public class Room {
     private int roomNumber;
